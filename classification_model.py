@@ -25,9 +25,11 @@ def f1_score(tp, fp, fn):
     f1_score = 2 * (precision * recall) / (precision + recall)
     
     # In ra kết quả
-    print(f'Precision: {precision}')
-    print(f'Recall: {recall}')
-    print(f'F1-score: {f1_score}')
+    #print(f'Precision: {precision}')
+    #print(f'Recall: {recall}')
+    #print(f'F1-score: {f1_score}')
 
+    return f1_score 
 # Ví dụ sử dụng hàm
-f1_score(50, 10, 5)
+assert round(f1_score(tp=2, fp=3, fn=5), 2) == 0.33
+print(round(f1_score(tp=2, fp=4, fn=5), 2))
