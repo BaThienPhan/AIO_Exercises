@@ -1,7 +1,7 @@
 import random
 import math
 
-def exercise3():
+def calculate_loss():
     num_samples = input("Input number of samples (integer number) which are generated: ")
     
     if not num_samples.isnumeric():
@@ -10,7 +10,7 @@ def exercise3():
     
     num_samples = int(num_samples)
     
-    loss_name = input("Input loss name (MAE, MSE, RMSE): ").strip().upper()
+    loss_name = input("Input loss name (MAE, MSE, RMSE): ")
     
     if loss_name not in ["MAE", "MSE", "RMSE"]:
         print(f"{loss_name} is not supported")
@@ -50,4 +50,4 @@ def exercise3():
         print(f"final RMSE: {final_loss}")
 
 # Call the function
-exercise3()
+calculate_loss()
